@@ -158,6 +158,9 @@ function Compile(){
 const CompileButton = document.getElementById("CompileButton");
 CompileButton.addEventListener("click",Compile);
 
+Compile();
+update_calculations();
+
 //ce.parse(expr, { canonical: false });
 //const expr = "\\frac{30}{-50}";
 //ce.parse(expr);

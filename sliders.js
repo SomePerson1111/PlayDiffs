@@ -19,7 +19,7 @@ function addRangeContainer(parent,slider_variable,update_slot) {
     const variableValue = document.createElement("input");
     variableValue.type = 'number';
     variableValue.className = "number-edit-slider";
-    variableValue.value = 0; 
+    variableValue.value = 0.5 
     
     variableValue.addEventListener("change",(event)=>{
         //console.log("value of slider changes");
@@ -44,7 +44,7 @@ function addRangeContainer(parent,slider_variable,update_slot) {
     minVal.type = 'number';
 
     minVal.className = "number-edit-slider";
-    minVal.value = -1;
+    minVal.value = 0;
     
     
     // Ползунок
