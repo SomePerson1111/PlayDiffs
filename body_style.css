@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+#inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#FormulaArea {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+}
+  
+button {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#CompileButton {
+    width: 100%; /* Ширина кнопки равна ширине родительского контейнера */
+    background-color: green; /* Зеленый цвет фона */
+    color: white; /* Белый цвет текста */
+    border: none; /* Убираем границу */
+    padding: 10px; /* Отступы внутри кнопки */
+    cursor: pointer; /* Изменяем указатель при наведении */
+    font-size: 20px;
+}
+
+.group {
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #dddddd;
+    list-style-type: none;
+}
+
+.slyder-area-class{
+    justify-content: center;
+    display: flex;
+    margin-top : 30px;
+}
+.container-slider {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    justify-content: center;
+}
+.variable-name-slider {
+    font-weight: bold;
+    margin : 0px;
+    justify-content: center;
+    display: flex;
+    background-color: #d7dac7;
+}
+.slider-box {
+    padding: 5px;
+    background-color: #e7e3e3;
+    justify-content: center;
+}
+.number-edit-slider{
+    background-color: #d7dac7;
+    width:50px;
+    display: flex;
+}
+.slider-wrapper-class{
+    width:20px;
+    height:150px;
+    padding: 2px;
+}
+.slider-class{
+    width: 150px;
+    height: 20px;
+    transform-origin: 82px 66px;
+    transform: rotate(-90deg);
+}
+
+#GraphArea {
+    justify-content: center;
+    display: flex;
+    margin-top : 30px;
+}
+
+.choose-area-class{
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    background-color: #e7e3e3;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модель</title>
+    <link rel="stylesheet" href="body_style.css">
+    <link rel="stylesheet" href="https://unpkg.com/mathlive/dist/mathlive-static.css">
+</head>
+<body>
+
+
+<div id="inputContainer" >
+    <h1 id="header" contenteditable="true" style = "text-align: center;">Мой Заголовок</h1>  
+    <ul id="FormulaArea">
+    </ul>
+    <button id="CompileButton">Compile</button>
+    <div id = "TchooseDiv" class = 'choose-area-class'>
+        <p>T:</p>
+        <input id = "choose_T" type = 'number' value = '1'>
+        <p>$tau$:</p>
+        <input id = "choose_tau" type = 'number' value = '0.1'>
+        <p>dt:</p>
+        <input id = "choose_dt" type = 'number' value = '0.01'>
+    </div>
+    <div id = "SliderArea_vars" class = 'slyder-area-class'></div>
+    <div id = "SliderArea_init" class = 'slyder-area-class'></div>
+    <div id = "GraphArea"></div>
+</div>
+
+
+
+<script>
+MathJax = {
+    tex: {
+    inlineMath: [
+    ['$', '$'], ['\\(', '\\)']
+    ]
+    },
+    startup: {
+    elements: [],
+    }
+};
+ </script>
+<script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<script type = "module" src = "https://unpkg.com/mathlive/dist/mathlive.mjs">
+</script>
+<!--<script type = "module" src = "https://unpkg.com/@cortex-js/compute-engine?module"></script>
+-->
+<script src="https://unpkg.com/@cortex-js/compute-engine" defer></script>
+<script src="https://cdn.plot.ly/plotly-2.30.0.min.js" charset="utf-8"></script>
+
+<script src="input_list.js" defer></script>
+<script src="latex_processor.js" defer></script>
+<script src="compile_exprs.js" defer></script>
+<script src="sliders.js" defer></script>
+<script src="calculation.js" defer></script>
+<script src="main.js" defer></script>
+
+</body>
+</html>
